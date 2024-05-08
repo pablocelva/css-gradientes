@@ -1,0 +1,42 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    height: 100vh;
+    /* background-image: repeating-linear-gradient(45deg, aquamarine, rgb(34, 71, 59) 30px, violet 30px, darkred 40px) */
+    /* background-image: repeating-radial-gradient(aquamarine, aquamarine 10px, darkred, darkred 20px) */
+    /* background-image: radial-gradient(aquamarine, darkred, violet); */
+    /* background-image: linear-gradient(to top right, aquamarine, darkred, violet); */
+    background-image: linear-gradient(45deg, aquamarine, darkred, violet);
+    background-size: 300%;
+    background-position: left;
+    animation: bg-animation 7s infinite alternate;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 80% auto;
+    /* width: 50vw; */
+    /* height: 50vh; */
+}
+
+/* .caja-titulo {
+    background-color: white;
+    border-radius: 5px;
+    padding: 0.5em;
+} */
+
+h1 {
+    font-weight: 700;
+    font-size: 4em;
+    color: transparent;
+    background-image: linear-gradient(aquamarine, darkred, violet);
+    background-clip: text;
+}
+
+@keyframes bg-animation {
+    0% { background-position: left;}
+    100% { background-position: right;}
+}
